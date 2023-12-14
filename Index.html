@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zCSS.css">
+
+</head>
+<body>
+
+
+    <h1>  REGISTRE SEU CARRO  </h1>
+    
+    <div id="mod">
+        <label for="Modelo"> Modelo </label>
+        <input name="Modelo" type="text" id="Modelo_car">
+        
+        <label for="Marca"> Marca </label>
+        <input name="Marca" type="text" id="Marca">
+        
+        <label for="Cor"> Cor </label>
+        <input name="Cor" type="text" id="Cor">
+        
+        <label for="Placa"> Placa </label>
+        <input name="Placa" type="text" id="Placa">
+
+        <label for="Ano"> Ano </label>
+        <input name="Ano" type="number" id="Ano_car">
+
+        <button type="button" onclick="registro()" > Cadastrar </button>
+    
+    </div>
+
+</body>
+</html>
+
+<script >
+    
+function registro(){ 
+
+let modelo1 = document.getElementById("Modelo_car").value
+let marca1 = document.getElementById("Marca").value 
+let cor1 = document.getElementById("Cor").value 
+let placa1 = document.getElementById("Placa").value 
+let ano1 = document.getElementById("Ano_car").value 
+
+const Registro_geral = { 
+    modelo: modelo1,
+    marca: marca1,
+    cor: cor1,
+    placa: placa1,
+    Ano: ano1
+}
+let boolean = prompt("desejas cadastrar outro carro? por favor, escreva 'SIM', se desesja, ou 'NÃO' no campo abaixo")
+
+    if(boolean == "SIM"){
+    let modelo1 = document.getElementById("Modelo_car")
+    let Farca1 = document.getElementById("Marca") 
+    let cor1 = document.getElementById("Cor") 
+    let placa1 = document.getElementById("Placa") 
+    let ano1 = document.getElementById("Ano_car") 
+
+    modelo1.innerText = ""
+    modelo1.innerText = ""
+    Farca1.innerText = ""
+    cor1.innerText = ""
+    placa1.innerText = ""
+    ano1.innerText = ""
+    
+    }
+    
+    else{
+        alert("false")
+    }
+
+
+}
+
+
+</script>
